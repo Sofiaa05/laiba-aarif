@@ -35,10 +35,10 @@
       --primary-dark: #52111d;
       --primary-fg: #fcf2eb;
       --text: #5e2029;
-      --muted: #825558;
+      --muted: #6a3a40;
       --rosegold: #d0a28e;
       --rose-soft: #cd9f8f;
-      --rose-deep: #b88574;
+      --rose-deep: #9a6352;
       --gold: #e6ca9c;
       --wine-bg: #3b0d18;
       --cream: #fdf4ea;
@@ -76,15 +76,15 @@
     .inner { width: 100%; max-width: 28rem; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
 
     /* ---------- Typography ---------- */
-    .eyebrow { font-size: .75rem; letter-spacing: .34em; text-transform: uppercase; color: var(--muted); font-weight: 300; }
+    .eyebrow { font-size: .75rem; letter-spacing: .34em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
     .eyebrow.sm { font-size: .66rem; letter-spacing: .28em; }
     .arabic { font-family: var(--font-arabic); color: var(--primary); font-size: 1.65rem; line-height: 2.1; }
     .names-big { font-size: 2.35rem; line-height: 1.05; font-weight: 300; letter-spacing: .06em; text-transform: uppercase; color: var(--primary); }
     .amp { display: block; font-style: italic; font-weight: 300; font-size: 1.6rem; color: var(--rose-soft); margin: .15rem 0; }
-    .italic-line { font-style: italic; font-weight: 300; color: rgba(105,23,38,.92); }
+    .italic-line { font-style: italic; font-weight: 500; color: var(--primary); }
     .h-section { font-size: 1.6rem; font-weight: 300; letter-spacing: .1em; text-transform: uppercase; color: var(--primary); margin-top: .4rem; }
     .person { font-size: 1.55rem; font-weight: 300; letter-spacing: .04em; color: var(--primary); }
-    .sub-italic { font-size: .9rem; letter-spacing: .14em; font-style: italic; color: var(--rose-deep); }
+    .sub-italic { font-size: .9rem; letter-spacing: .14em; font-style: italic; font-weight: 500; color: var(--rose-deep); }
 
     /* ---------- Divider ---------- */
     .divider { display: flex; align-items: center; justify-content: center; gap: .6rem; margin: .9rem 0; }
@@ -129,7 +129,7 @@
     .monogram span { font-family: var(--font-serif); font-style: italic; font-size: 1.9rem; color: var(--primary); letter-spacing: -.02em; line-height: 1; }
     .monogram span b { font-weight: 300; position: relative; top: .3rem; margin-left: -.05rem; }
     .hosts { font-size: 1rem; letter-spacing: .14em; text-transform: uppercase; color: var(--primary); font-weight: 500; margin: .2rem 0; }
-    .request { font-size: .85rem; font-style: italic; font-weight: 300; color: rgba(105,23,38,.9); line-height: 1.6; }
+    .request { font-size: .85rem; font-style: italic; font-weight: 500; color: var(--primary); line-height: 1.6; }
     .request strong { display: block; font-style: normal; font-weight: 400; letter-spacing: .16em; text-transform: uppercase; font-size: .78rem; color: var(--primary); }
     .hero-art { width: 100%; display: flex; justify-content: flex-start; padding-left: .5rem; margin: .6rem 0; }
     .hero-art img {
@@ -152,8 +152,8 @@
     #celebration { background: var(--wine-bg); padding: 4rem 1rem; }
     #celebration::before { background: radial-gradient(ellipse at center, rgba(70,16,29,.35) 30%, rgba(32,5,13,.92) 85%); }
     #celebration::after { opacity: .25; mix-blend-mode: luminosity; }
-    #celebration .eyebrow { color: rgba(253,244,234,.8); letter-spacing: .38em; }
-    #celebration .eyebrow.gold { color: var(--gold); font-weight: 400; }
+    #celebration .eyebrow { color: rgba(253,244,234,.95); letter-spacing: .38em; }
+    #celebration .eyebrow.gold { color: var(--gold); font-weight: 600; }
     #celebration .names-big { color: var(--cream); font-size: 2rem; letter-spacing: .08em; }
     #celebration .amp { color: var(--gold); }
     #celebration .quote { padding-top: .6rem; font-size: .9rem; font-style: italic; color: rgba(253,244,234,.75); line-height: 1.6; }
@@ -162,7 +162,7 @@
     /* ---------- Save the date ---------- */
     .big-day { font-size: 5.8rem; line-height: .88; font-weight: 300; color: var(--primary); text-shadow: 0 2px 12px rgba(105,23,38,.12); margin: .3rem 0 .2rem; }
     .date-box { border-top: 1px solid rgba(208,162,142,.6); border-bottom: 1px solid rgba(208,162,142,.6); padding: .9rem 1.5rem; margin: .8rem 0; width: 100%; max-width: 20rem; }
-    .date-box .weekday { font-size: 1rem; letter-spacing: .24em; text-transform: uppercase; color: var(--muted); font-weight: 300; }
+    .date-box .weekday { font-size: 1rem; letter-spacing: .24em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
     .date-box .time { margin-top: .2rem; font-size: 1.3rem; letter-spacing: .26em; text-transform: uppercase; color: var(--primary); font-weight: 300; }
 
     .programme {
@@ -190,26 +190,26 @@
     .cal-opt .ic { width: 2rem; height: 2rem; flex-shrink: 0; border-radius: .5rem; background: var(--bg); display: grid; place-items: center; }
     .cal-opt b { display: block; font-weight: 500; font-size: .95rem; letter-spacing: .02em; }
     .cal-opt small { display: block; font-size: .72rem; color: var(--muted); font-weight: 300; }
-    .modal-note { margin-top: 1rem; font-size: .72rem; font-style: italic; color: var(--muted); line-height: 1.5; }
+    .modal-note { margin-top: 1rem; font-size: .72rem; font-style: italic; font-weight: 500; color: var(--muted); line-height: 1.5; }
 
     /* ---------- Countdown ---------- */
     .countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: .6rem; width: 100%; max-width: 24rem; margin: 1.5rem 0; padding: 0 .25rem; }
     .cd-cell { display: flex; flex-direction: column; align-items: center; gap: .25rem; padding: 1.1rem .25rem; border-radius: .4rem; border: 1px solid rgba(208,162,142,.6); background: rgba(253,242,237,.85); box-shadow: 0 2px 10px rgba(94,32,41,.06); }
     .cd-num { font-size: 1.9rem; line-height: 1; font-weight: 300; color: var(--primary); font-variant-numeric: tabular-nums; }
-    .cd-lbl { font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); font-weight: 300; }
+    .cd-lbl { font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
     .cd-done { display: none; margin: 2rem 0; padding: 1.5rem 1rem; border-radius: .5rem; border: 1px solid rgba(208,162,142,.5); background: rgba(253,242,237,.8); font-size: 1.15rem; font-style: italic; color: var(--primary); font-weight: 300; }
 
     /* ---------- Venue ---------- */
     .venue-name { font-size: 1.65rem; line-height: 1.15; font-weight: 300; letter-spacing: .08em; text-transform: uppercase; color: var(--primary); }
-    .venue-sub { margin-top: .2rem; font-size: 1.05rem; font-weight: 300; letter-spacing: .14em; text-transform: uppercase; color: var(--rose-deep); }
-    .address { margin: 1rem 0; font-size: .98rem; line-height: 1.7; font-weight: 300; color: rgba(105,23,38,.9); }
+    .venue-sub { margin-top: .2rem; font-size: 1.05rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--rose-deep); }
+    .address { margin: 1rem 0; font-size: .98rem; line-height: 1.7; font-weight: 500; color: var(--primary); }
 
     /* ---------- Contacts ---------- */
     .contact { display: flex; flex-direction: column; align-items: center; padding: .25rem 0; }
     .contact h3 { font-size: 1.25rem; font-weight: 300; letter-spacing: .06em; color: var(--primary); margin-bottom: .2rem; }
     .contact a.phone { display: inline-block; margin-top: .15rem; font-size: 1.1rem; font-weight: 300; letter-spacing: .22em; color: var(--primary); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(208,162,142,.7); font-variant-numeric: tabular-nums; }
     .contact a.phone:hover { color: #8b1e32; text-decoration-color: var(--primary); }
-    .residence { margin-top: 1rem; font-size: .9rem; line-height: 1.6; font-weight: 300; font-style: italic; color: rgba(105,23,38,.85); }
+    .residence { margin-top: 1rem; font-size: .9rem; line-height: 1.6; font-weight: 500; font-style: italic; color: var(--primary); }
     .toast { position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 70; display: none; border-radius: 999px; border: 1px solid rgba(208,162,142,.8); background: var(--primary); color: var(--primary-fg); padding: .6rem 1.5rem; font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; box-shadow: 0 6px 20px rgba(94,32,41,.35); white-space: nowrap; }
     .toast.show { display: block; animation: fade .2s ease; }
 
