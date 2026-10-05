@@ -52,7 +52,8 @@
       background: var(--bg); color: var(--text); font-family: var(--font-serif);
       -webkit-font-smoothing: antialiased; overflow-x: hidden; line-height: 1.5;
     }
-    body.locked { overflow: hidden; height: 100svh; touch-action: none; }
+    /* Until "Open Invitation" is tapped, only the cover exists (it can still scroll on short screens) */
+    body.locked #content { display: none; }
     ::selection { background: rgba(105,23,38,.2); color: var(--primary); }
     a { color: inherit; }
     button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
@@ -136,7 +137,14 @@
       -webkit-mask-image: linear-gradient(to bottom, black 90%, rgba(0,0,0,.5) 96%, transparent 100%);
               mask-image: linear-gradient(to bottom, black 90%, rgba(0,0,0,.5) 96%, transparent 100%);
     }
-    .open-wrap { display: flex; flex-direction: column; align-items: center; padding-top: .5rem; }
+    /* Button stays pinned to the bottom of the screen even if the cover is taller than the phone */
+    #cover { overflow: clip; }
+    .open-wrap {
+      position: sticky; bottom: 0; z-index: 30; width: calc(100% + 2rem); margin: 0 -1rem;
+      display: flex; flex-direction: column; align-items: center;
+      padding: 1.6rem 1rem max(.9rem, env(safe-area-inset-bottom));
+      background: linear-gradient(to bottom, rgba(253,231,231,0), rgba(253,236,234,.92) 45%);
+    }
     .open-wrap .btn { font-size: .78rem; letter-spacing: .3em; padding: .9rem 2.5rem; box-shadow: 0 4px 24px rgba(105,23,38,.32); }
     .open-hint { margin-top: .6rem; }
 
@@ -256,6 +264,27 @@
       .names-big { font-size: 3.8rem; }
       .hero-art img { max-width: 340px; max-height: 44vh; }
     }
+    /* Short phones: compact cover so everything fits on one screen */
+    @media (max-height: 760px) {
+      #cover { padding-top: max(.8rem, env(safe-area-inset-top)); padding-bottom: 0; }
+      #cover .arabic { font-size: 1.4rem; line-height: 1.8; }
+      #cover .divider { margin: .45rem 0; }
+      #cover .monogram { width: 3.4rem; height: 3.4rem; margin: .1rem 0 .4rem; }
+      #cover .monogram span { font-size: 1.45rem; }
+      #cover .names-big { font-size: 2rem; margin-top: .4rem !important; }
+      #cover .amp { font-size: 1.3rem; }
+      #cover .hero-art { margin: .2rem 0 0; }
+      #cover .hero-art img { max-height: 22vh; }
+      .open-wrap { padding-top: 1rem; }
+      .open-hint { margin-top: .35rem; }
+    }
+    @media (max-height: 640px) {
+      #cover .monogram { display: none; }
+      #cover .hero-art img { max-height: 17vh; }
+      #cover .names-big { font-size: 1.75rem; }
+      #cover .request { font-size: .8rem; line-height: 1.45; }
+    }
+
     @media (prefers-reduced-motion: reduce) {
       .petal { display: none !important; }
       .animate-breathe, .music-btn.playing::after { animation: none !important; }
