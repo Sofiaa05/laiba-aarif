@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Wedding Invitation — Laiba & Aarif</title>
+  <meta name="description" content="Join us in celebrating the wedding of Laiba & Mohd. Aarif on Saturday, 28 November 2026, New Delhi." />
+  <meta name="theme-color" content="#4a1420" />
+  <meta name="color-scheme" content="light" />
+
+  <!-- Open Graph / WhatsApp sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Wedding Invitation — Laiba & Aarif" />
+  <meta property="og:description" content="Join us in celebrating the wedding of Laiba & Mohd. Aarif on Saturday, 28 November 2026, New Delhi." />
+  <meta property="og:image" content="images/couple-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #fde7e7;
+      --paper: #fdf2ed;
+      --primary: #691726;
+      --primary-dark: #52111d;
+      --primary-fg: #fcf2eb;
+      --text: #5e2029;
+      --muted: #825558;
+      --rosegold: #d0a28e;
+      --rose-soft: #cd9f8f;
+      --rose-deep: #b88574;
+      --gold: #e6ca9c;
+      --wine-bg: #3b0d18;
+      --cream: #fdf4ea;
+      --font-serif: "Cormorant Garamond", Georgia, serif;
+      --font-arabic: "Amiri", serif;
+      --font-display: "Cinzel", "Cormorant Garamond", serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { background: var(--bg); scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--bg); color: var(--text); font-family: var(--font-serif);
+      -webkit-font-smoothing: antialiased; overflow-x: hidden; line-height: 1.5;
+    }
+    body.locked { overflow: hidden; height: 100svh; touch-action: none; }
+    ::selection { background: rgba(105,23,38,.2); color: var(--primary); }
+    a { color: inherit; }
+    button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+
+    /* ---------- Sections ---------- */
+    .section {
+      position: relative; isolation: isolate; min-height: 100svh; width: 100%;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      overflow: hidden; padding: 5rem 1.5rem; text-align: center; user-select: none;
+      background: var(--bg);
+    }
+    .section::after {
+      content: ""; position: absolute; inset: -7%; z-index: -2; pointer-events: none;
+      background: url('images/floral-frame-portrait.png') center / cover no-repeat;
+    }
+    .section::before {
+      content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+      background: radial-gradient(ellipse at center, rgba(253,242,237,.88) 30%, rgba(253,231,231,.58) 78%);
+    }
+    .inner { width: 100%; max-width: 28rem; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+
+    /* ---------- Typography ---------- */
+    .eyebrow { font-size: .75rem; letter-spacing: .34em; text-transform: uppercase; color: var(--muted); font-weight: 300; }
+    .eyebrow.sm { font-size: .66rem; letter-spacing: .28em; }
+    .arabic { font-family: var(--font-arabic); color: var(--primary); font-size: 1.65rem; line-height: 2.1; }
+    .names-big { font-size: 2.35rem; line-height: 1.05; font-weight: 300; letter-spacing: .06em; text-transform: uppercase; color: var(--primary); }
+    .amp { display: block; font-style: italic; font-weight: 300; font-size: 1.6rem; color: var(--rose-soft); margin: .15rem 0; }
+    .italic-line { font-style: italic; font-weight: 300; color: rgba(105,23,38,.92); }
+    .h-section { font-size: 1.6rem; font-weight: 300; letter-spacing: .1em; text-transform: uppercase; color: var(--primary); margin-top: .4rem; }
+    .person { font-size: 1.55rem; font-weight: 300; letter-spacing: .04em; color: var(--primary); }
+    .sub-italic { font-size: .9rem; letter-spacing: .14em; font-style: italic; color: var(--rose-deep); }
+
+    /* ---------- Divider ---------- */
+    .divider { display: flex; align-items: center; justify-content: center; gap: .6rem; margin: .9rem 0; }
+    .divider span:nth-child(1), .divider span:nth-child(3) { height: 1px; width: 3rem; }
+    .divider span:nth-child(1) { background: linear-gradient(to right, transparent, var(--rosegold)); }
+    .divider span:nth-child(3) { background: linear-gradient(to left, transparent, var(--rosegold)); }
+    .divider span:nth-child(2) { width: 6px; height: 6px; transform: rotate(45deg); border: 1px solid var(--rosegold); background: rgba(208,162,142,.35); }
+    .divider.gold span:nth-child(1) { background: linear-gradient(to right, transparent, var(--gold)); }
+    .divider.gold span:nth-child(3) { background: linear-gradient(to left, transparent, var(--gold)); }
+    .divider.gold span:nth-child(2) { border-color: var(--gold); background: rgba(230,202,156,.4); }
+
+    /* ---------- Buttons ---------- */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: .6rem;
+      min-height: 3rem; padding: .85rem 2.2rem; border-radius: 999px;
+      border: 1px solid rgba(208,162,142,.8); background: var(--primary); color: var(--primary-fg);
+      font-size: .75rem; letter-spacing: .26em; text-transform: uppercase; text-decoration: none;
+      box-shadow: 0 4px 20px rgba(105,23,38,.28); transition: background .2s, transform .2s;
+    }
+    .btn:hover { background: var(--primary-dark); }
+    .btn:active { transform: scale(.95); }
+    .btn svg { width: 16px; height: 16px; }
+
+    @keyframes breathe { 0%,100% { transform: scale(1); box-shadow: 0 0 0 rgba(105,23,38,.35); } 50% { transform: scale(1.035); box-shadow: 0 0 28px 4px rgba(105,23,38,.25); } }
+    .animate-breathe { animation: breathe 3.2s ease-in-out infinite; }
+
+    /* ---------- Scalloped edge between sections ---------- */
+    .wave { position: absolute; left: 0; right: 0; width: 100%; line-height: 0; z-index: 10; pointer-events: none; }
+    .wave.bottom { bottom: 0; }
+    .wave.top { top: 0; transform: rotate(180deg); }
+    .wave svg { display: block; width: 100%; height: 18px; filter: drop-shadow(0 4px 6px rgba(94,32,41,.1)); }
+
+    /* ---------- Cover ---------- */
+    #cover { justify-content: space-between; padding: max(1.5rem, env(safe-area-inset-top)) 1rem max(1.5rem, env(safe-area-inset-bottom)); }
+    #cover::before { background: radial-gradient(ellipse at center, rgba(253,242,237,.88) 30%, rgba(253,231,231,.6) 80%); }
+    .cover-content { width: 100%; max-width: 36rem; margin: auto; display: flex; flex-direction: column; align-items: center; }
+    .monogram {
+      width: 4.6rem; height: 4.6rem; border-radius: 50%; border: 1px solid var(--rosegold);
+      outline: 1px solid rgba(208,162,142,.45); outline-offset: 4px;
+      display: grid; place-items: center; margin: .2rem 0 .6rem; background: rgba(253,242,237,.6);
+    }
+    .monogram span { font-family: var(--font-serif); font-style: italic; font-size: 1.9rem; color: var(--primary); letter-spacing: -.02em; line-height: 1; }
+    .monogram span b { font-weight: 300; position: relative; top: .3rem; margin-left: -.05rem; }
+    .hosts { font-size: 1rem; letter-spacing: .14em; text-transform: uppercase; color: var(--primary); font-weight: 500; margin: .2rem 0; }
+    .request { font-size: .85rem; font-style: italic; font-weight: 300; color: rgba(105,23,38,.9); line-height: 1.6; }
+    .request strong { display: block; font-style: normal; font-weight: 400; letter-spacing: .16em; text-transform: uppercase; font-size: .78rem; color: var(--primary); }
+    .hero-art { width: 100%; display: flex; justify-content: flex-start; padding-left: .5rem; margin: .6rem 0; }
+    .hero-art img {
+      width: 100%; max-width: 210px; max-height: 30vh; object-fit: contain; object-position: left;
+      -webkit-mask-image: linear-gradient(to bottom, black 90%, rgba(0,0,0,.5) 96%, transparent 100%);
+              mask-image: linear-gradient(to bottom, black 90%, rgba(0,0,0,.5) 96%, transparent 100%);
+    }
+    .open-wrap { display: flex; flex-direction: column; align-items: center; padding-top: .5rem; }
+    .open-wrap .btn { font-size: .78rem; letter-spacing: .3em; padding: .9rem 2.5rem; box-shadow: 0 4px 24px rgba(105,23,38,.32); }
+    .open-hint { margin-top: .6rem; }
+
+    /* ---------- Dark celebration section ---------- */
+    #celebration { background: var(--wine-bg); padding: 4rem 1rem; }
+    #celebration::before { background: radial-gradient(ellipse at center, rgba(70,16,29,.35) 30%, rgba(32,5,13,.92) 85%); }
+    #celebration::after { opacity: .25; mix-blend-mode: luminosity; }
+    #celebration .eyebrow { color: rgba(253,244,234,.8); letter-spacing: .38em; }
+    #celebration .eyebrow.gold { color: var(--gold); font-weight: 400; }
+    #celebration .names-big { color: var(--cream); font-size: 2rem; letter-spacing: .08em; }
+    #celebration .amp { color: var(--gold); }
+    #celebration .quote { padding-top: .6rem; font-size: .9rem; font-style: italic; color: rgba(253,244,234,.75); line-height: 1.6; }
+    #celebration .hero-art { margin-top: 1.4rem; }
+
+    /* ---------- Save the date ---------- */
+    .big-day { font-size: 5.8rem; line-height: .88; font-weight: 300; color: var(--primary); text-shadow: 0 2px 12px rgba(105,23,38,.12); margin: .3rem 0 .2rem; }
+    .date-box { border-top: 1px solid rgba(208,162,142,.6); border-bottom: 1px solid rgba(208,162,142,.6); padding: .9rem 1.5rem; margin: .8rem 0; width: 100%; max-width: 20rem; }
+    .date-box .weekday { font-size: 1rem; letter-spacing: .24em; text-transform: uppercase; color: var(--muted); font-weight: 300; }
+    .date-box .time { margin-top: .2rem; font-size: 1.3rem; letter-spacing: .26em; text-transform: uppercase; color: var(--primary); font-weight: 300; }
+
+    .programme {
+      width: 100%; max-width: 22rem; margin: .6rem 0 1.2rem; padding: 1rem 1.2rem;
+      border: 1px solid rgba(208,162,142,.55); border-radius: .6rem; background: rgba(253,242,237,.82);
+      backdrop-filter: blur(2px); box-shadow: 0 2px 10px rgba(94,32,41,.06);
+    }
+    .programme h3 { font-family: var(--font-serif); font-style: italic; font-weight: 400; font-size: 1.7rem; color: var(--primary); line-height: 1.1; }
+    .prog-row { display: flex; align-items: baseline; gap: .5rem; padding: .55rem 0; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--primary); }
+    .prog-row + .prog-row { border-top: 1px dashed rgba(208,162,142,.45); }
+    .prog-row .dots { flex: 1; border-bottom: 1px dotted rgba(130,85,88,.5); transform: translateY(-4px); }
+    .prog-row .t { color: var(--muted); font-weight: 500; white-space: nowrap; }
+
+    /* ---------- Modal ---------- */
+    .modal { position: fixed; inset: 0; z-index: 60; display: none; align-items: center; justify-content: center; padding: 1rem; background: rgba(37,6,15,.6); backdrop-filter: blur(4px); }
+    .modal.open { display: flex; animation: fade .2s ease; }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    .modal-card { position: relative; width: 100%; max-width: 24rem; border-radius: 1rem; border: 1px solid rgba(208,162,142,.7); background: var(--paper); padding: 1.5rem; text-align: center; box-shadow: 0 25px 50px rgba(0,0,0,.25); }
+    .modal-close { position: absolute; right: .8rem; top: .8rem; width: 2rem; height: 2rem; border-radius: 50%; display: grid; place-items: center; color: var(--muted); }
+    .modal-close:hover { background: #f7dedd; color: var(--primary); }
+    .modal-icon { width: 2.5rem; height: 2.5rem; margin: 0 auto .5rem; border-radius: 50%; background: #f7dedd; border: 1px solid rgba(208,162,142,.5); display: grid; place-items: center; color: var(--primary); }
+    .modal-card h3 { font-size: 1.15rem; font-weight: 300; letter-spacing: .12em; text-transform: uppercase; color: var(--primary); }
+    .cal-opt { width: 100%; margin-top: .6rem; display: flex; align-items: center; gap: .75rem; text-align: left; padding: .85rem; border-radius: .75rem; border: 1px solid rgba(208,162,142,.5); background: rgba(255,255,255,.8); color: var(--primary); transition: .2s; }
+    .cal-opt:hover { background: #fff; border-color: rgba(105,23,38,.4); }
+    .cal-opt .ic { width: 2rem; height: 2rem; flex-shrink: 0; border-radius: .5rem; background: var(--bg); display: grid; place-items: center; }
+    .cal-opt b { display: block; font-weight: 500; font-size: .95rem; letter-spacing: .02em; }
+    .cal-opt small { display: block; font-size: .72rem; color: var(--muted); font-weight: 300; }
+    .modal-note { margin-top: 1rem; font-size: .72rem; font-style: italic; color: var(--muted); line-height: 1.5; }
+
+    /* ---------- Countdown ---------- */
+    .countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: .6rem; width: 100%; max-width: 24rem; margin: 1.5rem 0; padding: 0 .25rem; }
+    .cd-cell { display: flex; flex-direction: column; align-items: center; gap: .25rem; padding: 1.1rem .25rem; border-radius: .4rem; border: 1px solid rgba(208,162,142,.6); background: rgba(253,242,237,.85); box-shadow: 0 2px 10px rgba(94,32,41,.06); }
+    .cd-num { font-size: 1.9rem; line-height: 1; font-weight: 300; color: var(--primary); font-variant-numeric: tabular-nums; }
+    .cd-lbl { font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); font-weight: 300; }
+    .cd-done { display: none; margin: 2rem 0; padding: 1.5rem 1rem; border-radius: .5rem; border: 1px solid rgba(208,162,142,.5); background: rgba(253,242,237,.8); font-size: 1.15rem; font-style: italic; color: var(--primary); font-weight: 300; }
+
+    /* ---------- Venue ---------- */
+    .venue-name { font-size: 1.65rem; line-height: 1.15; font-weight: 300; letter-spacing: .08em; text-transform: uppercase; color: var(--primary); }
+    .venue-sub { margin-top: .2rem; font-size: 1.05rem; font-weight: 300; letter-spacing: .14em; text-transform: uppercase; color: var(--rose-deep); }
+    .address { margin: 1rem 0; font-size: .98rem; line-height: 1.7; font-weight: 300; color: rgba(105,23,38,.9); }
+
+    /* ---------- Contacts ---------- */
+    .contact { display: flex; flex-direction: column; align-items: center; padding: .25rem 0; }
+    .contact h3 { font-size: 1.25rem; font-weight: 300; letter-spacing: .06em; color: var(--primary); margin-bottom: .2rem; }
+    .contact a.phone { display: inline-block; margin-top: .15rem; font-size: 1.1rem; font-weight: 300; letter-spacing: .22em; color: var(--primary); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(208,162,142,.7); font-variant-numeric: tabular-nums; }
+    .contact a.phone:hover { color: #8b1e32; text-decoration-color: var(--primary); }
+    .residence { margin-top: 1rem; font-size: .9rem; line-height: 1.6; font-weight: 300; font-style: italic; color: rgba(105,23,38,.85); }
+    .toast { position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 70; display: none; border-radius: 999px; border: 1px solid rgba(208,162,142,.8); background: var(--primary); color: var(--primary-fg); padding: .6rem 1.5rem; font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; box-shadow: 0 6px 20px rgba(94,32,41,.35); white-space: nowrap; }
+    .toast.show { display: block; animation: fade .2s ease; }
+
+    /* ---------- Closing ---------- */
+    .closing-line { font-size: 1.3rem; line-height: 1.4; font-weight: 300; font-style: italic; color: var(--primary); }
+    .family-sign { font-size: 1.9rem; font-weight: 300; letter-spacing: .1em; text-transform: uppercase; color: var(--primary); margin-top: .3rem; }
+    .kids { margin-top: .4rem; font-size: 1.15rem; font-weight: 400; letter-spacing: .12em; color: var(--primary); }
+
+    /* ---------- Music toggle ---------- */
+    .music-btn {
+      position: fixed; right: max(1rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom)); z-index: 40;
+      width: 2.9rem; height: 2.9rem; border-radius: 50%; display: none; place-items: center;
+      background: rgba(105,23,38,.92); color: var(--primary-fg); border: 1px solid rgba(208,162,142,.8);
+      box-shadow: 0 4px 16px rgba(105,23,38,.35); backdrop-filter: blur(4px);
+    }
+    .music-btn.visible { display: grid; }
+    .music-btn svg { width: 18px; height: 18px; }
+    .music-btn.playing::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 1px solid rgba(208,162,142,.6); animation: ping 2s cubic-bezier(0,0,.2,1) infinite; }
+    @keyframes ping { 75%, 100% { transform: scale(1.35); opacity: 0; } }
+
+    /* ---------- Petals ---------- */
+    #petals { position: fixed; inset: 0; z-index: 20; overflow: hidden; pointer-events: none; }
+    @keyframes petal-fall {
+      0% { opacity: 0; transform: translateY(-10vh) rotate(0); }
+      10% { opacity: var(--petal-opacity, .75); }
+      90% { opacity: var(--petal-opacity, .75); }
+      100% { transform: translate3d(var(--petal-drift, 50px), 110vh, 0) rotate(480deg); opacity: 0; }
+    }
+    .petal { position: absolute; top: 0; display: block; opacity: 0; will-change: transform, opacity;
+      animation: petal-fall var(--petal-duration, 14s) linear infinite; animation-delay: var(--petal-delay, 0s); }
+
+    /* ---------- Reveal on scroll ---------- */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s ease, transform .9s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+
+    @media (min-width: 640px) {
+      .eyebrow { font-size: .85rem; }
+      .arabic { font-size: 2.1rem; line-height: 2; }
+      .names-big { font-size: 3.4rem; }
+      #celebration .names-big { font-size: 3.2rem; }
+      .amp { font-size: 1.9rem; }
+      .h-section { font-size: 1.9rem; }
+      .person { font-size: 1.85rem; }
+      .hero-art img { max-width: 280px; max-height: 38vh; }
+      .big-day { font-size: 7.8rem; }
+      .cd-num { font-size: 2.3rem; }
+      .venue-name { font-size: 2rem; }
+      .request { font-size: 1rem; }
+      .wave svg { height: 22px; }
+    }
+    @media (min-width: 1024px) {
+      .names-big { font-size: 3.8rem; }
+      .hero-art img { max-width: 340px; max-height: 44vh; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .petal { display: none !important; }
+      .animate-breathe, .music-btn.playing::after { animation: none !important; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body class="locked">
+
+  <div id="petals" aria-hidden="true"></div>
+
+  <!-- ============ 1. COVER ============ -->
+  <section id="cover" class="section">
+    <div class="cover-content">
+      <p class="arabic" dir="rtl" lang="ar">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+      <p class="eyebrow sm">In the name of Allah, the Most Beneficent &amp; Merciful</p>
+
+      <div class="divider"><span></span><span></span><span></span></div>
+
+      <div class="monogram" aria-hidden="true"><span>L<b>A</b></span></div>
+
+      <p class="hosts">Mrs. &amp; Mr. Mohd. Shafiq Abbasi</p>
+      <p class="request">request the honour of your presence at the
+        <strong>Wedding Ceremony</strong>
+        of their beloved daughter
+      </p>
+
+      <h1 class="names-big" style="margin-top:.8rem">
+        Laiba
+        <span class="amp">with</span>
+        Mohd. Aarif
+      </h1>
+
+      <div class="divider"><span></span><span></span><span></span></div>
+    </div>
+
+    <div class="hero-art">
+      <img src="images/couple-hero.png" alt="Laiba &amp; Aarif — wedding illustration" />
+    </div>
+
+    <div class="open-wrap">
+      <button id="openBtn" class="btn animate-breathe" type="button">Open Invitation</button>
+      <p class="eyebrow sm open-hint">Tap to open with music</p>
+    </div>
+
+    <div class="wave bottom" aria-hidden="true"></div>
+  </section>
+
+  <main id="content">
+
+    <!-- ============ 2. QURAN VERSE ============ -->
+    <section id="verse" class="section">
+      <div class="wave top" aria-hidden="true"></div>
+      <div class="inner reveal">
+        <p class="eyebrow">In the name of Allah</p>
+        <div class="divider"><span></span><span></span><span></span></div>
+        <p class="arabic" dir="rtl" lang="ar" style="line-height:2.2">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</p>
+        <div class="divider"><span></span><span></span><span></span></div>
+        <p class="italic-line" style="max-width:24rem;font-size:1.08rem;line-height:1.65;padding:0 .75rem">
+          “And among His signs is that He created for you spouses from among yourselves so that you may find tranquility in them; and He placed between you affection and mercy.”
+        </p>
+        <p class="eyebrow sm" style="margin-top:1rem">Surah Ar-Rum • 30:21</p>
+      </div>
+      <div class="wave bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ 3. FAMILIES ============ -->
+    <section id="families" class="section">
+      <div class="wave top" aria-hidden="true"></div>
+      <div class="inner reveal">
+        <p class="eyebrow">With the blessings of their</p>
+        <h2 class="h-section">Families</h2>
+        <div class="divider"><span></span><span></span><span></span></div>
+
+        <p class="eyebrow sm">Beloved daughter of</p>
+        <p class="person" style="padding-top:.3rem">Mrs. &amp; Mr. Mohd. Shafiq Abbasi</p>
+        <p class="sub-italic" style="margin-top:.2rem">Uttam Nagar, New Delhi</p>
+
+        <span class="amp" style="margin:.8rem 0">&amp;</span>
+
+        <p class="eyebrow sm">Son of</p>
+        <p class="person" style="padding-top:.3rem">Mrs. &amp; Mr. Mohd. Arshad</p>
+        <p class="sub-italic" style="margin-top:.2rem">Malerkotla, Punjab</p>
+
+        <div class="divider"><span></span><span></span><span></span></div>
+        <p class="eyebrow sm">and Family</p>
+      </div>
+      <div class="wave bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ 4. CELEBRATION (dark) ============ -->
+    <section id="celebration" class="section">
+      <div class="wave top" data-fill="#fde7e7" aria-hidden="true"></div>
+      <div class="inner reveal" style="max-width:36rem">
+        <p class="eyebrow">The celebration of</p>
+        <p class="eyebrow gold" style="margin-top:.2rem">Nikah</p>
+        <div class="divider gold"><span></span><span></span><span></span></div>
+
+        <h2 class="names-big">
+          Laiba
+          <span class="amp">&amp;</span>
+          Aarif
+        </h2>
+
+        <div class="divider gold"><span></span><span></span><span></span></div>
+        <p class="eyebrow" style="color:rgba(253,244,234,.95);letter-spacing:.34em">Wedding Ceremony</p>
+        <p class="eyebrow sm" style="color:rgba(230,202,156,.85);letter-spacing:.24em;margin-top:.3rem">New Delhi • India</p>
+        <p class="quote">“Destiny brought them together<br />and now love will seal their bond forever”</p>
+      </div>
+      <div class="hero-art reveal">
+        <img src="images/couple-hero.png" alt="Laiba &amp; Aarif — Nikah illustration" />
+      </div>
+      <div class="wave bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ 5. SAVE THE DATE + PROGRAMME ============ -->
+    <section id="date" class="section">
+      <div class="wave top" data-fill="#3b0d18" aria-hidden="true"></div>
+      <div class="inner reveal">
+        <p class="eyebrow">Save the date</p>
+        <p class="eyebrow sm" style="margin-top:.4rem">Insha'Allah</p>
+        <div class="divider"><span></span><span></span><span></span></div>
+
+        <div class="big-day">28</div>
+        <p class="eyebrow" style="letter-spacing:.44em">November</p>
+
+        <div class="date-box">
+          <p class="weekday">Saturday</p>
+          <p class="time">2026</p>
+        </div>
+
+        <div class="programme">
+          <h3>Programme</h3>
+          <div class="divider" style="margin:.5rem 0 .3rem"><span></span><span></span><span></span></div>
+          <div class="prog-row"><span>Welcome of Barat</span><span class="dots"></span><span class="t">7:00 PM</span></div>
+          <div class="prog-row"><span>Nikah</span><span class="dots"></span><span class="t">8:00 PM</span></div>
+          <div class="prog-row"><span>Dinner</span><span class="dots"></span><span class="t">After Nikah</span></div>
+          <div class="prog-row"><span>Rukhsati</span><span class="dots"></span><span class="t">11:00 PM</span></div>
+        </div>
+
+        <button id="calBtn" class="btn" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 19h6"/><path d="M16 2v4"/><path d="M19 16v6"/><path d="M21 12.6V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8.5"/><path d="M3 10h18"/><path d="M8 2v4"/></svg>
+          Add to Calendar
+        </button>
+      </div>
+      <div class="wave bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ 6. COUNTDOWN ============ -->
+    <section id="countdown-section" class="section">
+      <div class="wave top" aria-hidden="true"></div>
+      <div class="inner reveal">
+        <p class="eyebrow">Counting the moments</p>
+        <div class="divider"><span></span><span></span><span></span></div>
+
+        <div class="countdown" id="countdown">
+          <div class="cd-cell"><span class="cd-num" id="cd-d">00</span><span class="cd-lbl">Days</span></div>
+          <div class="cd-cell"><span class="cd-num" id="cd-h">00</span><span class="cd-lbl">Hours</span></div>
+          <div class="cd-cell"><span class="cd-num" id="cd-m">00</span><span class="cd-lbl">Mins</span></div>
+          <div class="cd-cell"><span class="cd-num" id="cd-s">00</span><span class="cd-lbl">Secs</span></div>
+        </div>
+        <p class="cd-done" id="cdDone">Alhamdulillah — with love and gratitude, thank you for celebrating with us.</p>
+
+        <div class="divider"><span></span><span></span><span></span></div>
+        <p class="eyebrow sm">Until we celebrate together</p>
+      </div>
+      <div class="wave bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ 7. VENUE ============ -->
+    <section id="venue" class="section">
+      <div class="wave top" aria-hidden="true"></div>
+      <div class="inner reveal">
+        <p class="eyebrow">The venue</p>
+        <div class="divider"><span></span><span></span><span></span></div>
+
+        <h2 class="venue-name">Karan Vatika</h2>
+        <p class="venue-sub">Lawn No. 2</p>
+
+        <p class="address">
+          Rishal Garden,<br />
+          Najafgarh–Nangloi Road,<br />
+          New Delhi – 110041
+        </p>
+
+        <div class="divider"><span></span><span></span><span></span></div>
+
+        <a id="mapBtn" class="btn" target="_blank" rel="noopener noreferrer" style="margin-top:.8rem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-5.5 10.2-7.4 11.8a1 1 0 0 1-1.2 0C9.5 20.2 4 15 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          View Location
+        </a>
+      </div>
+      <div class="wave bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ 8. CONTACTS ============ -->
+    <section id="contacts" class="section">
+      <div class="wave top" aria-hidden="true"></div>
+      <div class="inner reveal">
+        <p class="eyebrow">Warm correspondence</p>
+        <h2 class="h-section">Family Contacts</h2>
+        <div class="divider"><span></span><span></span><span></span></div>
+
+        <div class="contact">
+          <h3>Mrs. &amp; Mr. Mohd. Shafiq</h3>
+          <a class="phone" href="tel:+918920507200" data-phone="8920507200">89205 07200</a>
+          <a class="phone" href="tel:+919718606520" data-phone="9718606520">97186 06520</a>
+          <a class="phone" href="tel:+917011468351" data-phone="7011468351">70114 68351</a>
+          <a class="phone" href="tel:+918218377882" data-phone="8218377882">82183 77882</a>
+        </div>
+
+        <p class="residence">
+          A-70, Om Vihar, Phase-V, Peer Baba Road,<br />
+          Uttam Nagar, New Delhi – 110059
+        </p>
+
+        <div class="divider" style="margin-top:1.2rem"><span></span><span></span><span></span></div>
+        <p class="eyebrow sm">For assistance &amp; inquiries</p>
+      </div>
+      <div class="wave bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ 9. CLOSING ============ -->
+    <section id="closing" class="section">
+      <div class="wave top" aria-hidden="true"></div>
+      <div class="inner reveal">
+        <p class="closing-line">Your presence will make our celebration<br />even more special.</p>
+        <div class="divider"><span></span><span></span><span></span></div>
+        <p class="italic-line" style="font-size:1rem;max-width:20rem">We look forward to celebrating this beautiful occasion with you.</p>
+
+        <div class="divider" style="margin-top:1.6rem"><span></span><span></span><span></span></div>
+        <p class="eyebrow sm">With best compliments from</p>
+        <p class="family-sign">Abbasi Family</p>
+
+        <div class="divider" style="margin-top:1.6rem"><span></span><span></span><span></span></div>
+        <p class="eyebrow sm">A special invitation from</p>
+        <p class="kids">Sofia, Riyanshi, Zara &amp; Henza</p>
+
+        <div class="monogram" aria-hidden="true" style="margin-top:2rem"><span>L<b>A</b></span></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Calendar modal -->
+  <div class="modal" id="calModal" role="dialog" aria-modal="true" aria-labelledby="calTitle">
+    <div class="modal-card">
+      <button class="modal-close" id="calClose" type="button" aria-label="Close calendar options">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+      <div class="modal-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 19h6"/><path d="M16 2v4"/><path d="M19 16v6"/><path d="M21 12.6V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8.5"/><path d="M3 10h18"/><path d="M8 2v4"/></svg>
+      </div>
+      <h3 id="calTitle">Add to Calendar</h3>
+      <p class="eyebrow sm" style="margin-top:.3rem">Saturday • 28 November 2026</p>
+      <div style="margin-top:1rem">
+        <button class="cal-opt" id="calGoogle" type="button">
+          <span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></span>
+          <span><b>Google Calendar</b><small>Opens in Google Calendar</small></span>
+        </button>
+        <button class="cal-opt" id="calIcs" type="button">
+          <span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg></span>
+          <span><b>Apple / Outlook / Other</b><small>Downloads event file to device</small></span>
+        </button>
+      </div>
+      <p class="modal-note">Compatible with Apple Calendar, Google Calendar, Outlook, and all smartphone calendars.</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <button class="music-btn" id="musicBtn" type="button" aria-label="Mute background music"></button>
+  <audio id="bgm" src="audio/wedding-invitation.mp3" loop preload="auto"></audio>
+
+  <script>
+    /* ===== Event details (edit here) ===== */
+    const EVENT = {
+      title: "Wedding — Laiba & Aarif",
+      startIso: "2026-11-28T19:00:00+05:30",       // Welcome of Barat
+      calStartUtc: "20261128T133000Z",               // 7:00 PM IST
+      calEndUtc:   "20261128T180000Z",               // 11:30 PM IST (after Rukhsati)
+      venue: "Karan Vatika (Lawn No. 2), Rishal Garden, Najafgarh-Nangloi Road, New Delhi - 110041",
+      // Karan Vatika Farm (same place as https://maps.app.goo.gl/NGSrX3JRMiyuRAfL6, without the fixed start point)
+      mapsUrl: "https://maps.google.com/?cid=13762507825252838880",
+      details:
+        "With the blessings of our families, you are cordially invited to the Wedding Ceremony of Laiba (D/O Mrs. & Mr. Mohd. Shafiq Abbasi) with Mohd. Aarif (S/O Mrs. & Mr. Mohd. Arshad).\n\n" +
+        "Programme — Saturday, 28 November 2026\n" +
+        "Welcome of Barat: 7:00 PM\nNikah: 8:00 PM\nDinner: After Nikah\nRukhsati: 11:00 PM\n\n" +
+        "Contact: 8920507200, 9718606520, 7011468351, 8218377882"
+    };
+    document.getElementById("mapBtn").href = EVENT.mapsUrl;
+
+    /* ===== Scalloped wave edges ===== */
+    (function () {
+      const n = 48, w = 1200 / n;
+      let d = "M0,24 L0,14";
+      for (let i = 0; i < n; i++) d += ` Q${i * w + w / 2},0 ${(i + 1) * w},14`;
+      d += " L1200,24 Z";
+      document.querySelectorAll(".wave").forEach(el => {
+        const fill = el.dataset.fill || "#fde7e7";
+        el.innerHTML = `<svg viewBox="0 0 1200 24" preserveAspectRatio="none"><path d="${d}" fill="${fill}"/></svg>`;
+      });
+    })();
+
+    /* ===== Falling petals ===== */
+    (function () {
+      const box = document.getElementById("petals");
+      const count = window.innerWidth < 640 ? 8 : 12;
+      const grads = {
+        burgundy: ["#7a1c2e", "#55111e", "#3d0912"],
+        wine: ["#963548", "#691726", "#470c17"],
+        blush: ["#e39aa8", "#b5586b", "#7a1c2e"]
+      };
+      let html = "";
+      for (let i = 0; i < count; i++) {
+        const v = i % 3 === 0 ? "burgundy" : i % 3 === 1 ? "wine" : "blush";
+        const g = grads[v], size = 14 + (i % 3) * 5;
+        const left = i * (100 / count) + Math.sin(i * 1.5) * 4;
+        html += `<span class="petal" style="left:${left}%;--petal-duration:${12 + (i % 5) * 2.5}s;--petal-delay:${(i * 1.2) % 8}s;--petal-drift:${(i % 2 ? -1 : 1) * (30 + (i % 4) * 12)}px;--petal-opacity:${.45 + (i % 4) * .12}">
+          <svg width="${size}" height="${size * 1.3}" viewBox="0 0 24 32" fill="none">
+            <defs><linearGradient id="pg${i}" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="${g[0]}"/><stop offset="60%" stop-color="${g[1]}"/><stop offset="100%" stop-color="${g[2]}"/></linearGradient></defs>
+            <path d="M12 0 C4 6, 0 16, 2 24 C4 30, 10 32, 12 32 C14 32, 20 30, 22 24 C24 16, 20 6, 12 0 Z" fill="url(#pg${i})" opacity="0.88"/>
+            <path d="M12 4 Q12 18 12 28" stroke="rgba(255,255,255,0.18)" stroke-width="0.8" fill="none"/>
+          </svg></span>`;
+      }
+      box.innerHTML = html;
+    })();
+
+    /* ===== Music ===== */
+    const audio = document.getElementById("bgm");
+    const musicBtn = document.getElementById("musicBtn");
+    const ICON_ON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6A1.4 1.4 0 0 1 5.4 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.4 18.4a9 9 0 0 0 0-12.8"/></svg>';
+    const ICON_OFF = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6A1.4 1.4 0 0 1 5.4 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5z"/><line x1="22" x2="16" y1="9" y2="15"/><line x1="16" x2="22" y1="9" y2="15"/></svg>';
+    function syncMusicBtn() {
+      const on = !audio.paused;
+      musicBtn.innerHTML = on ? ICON_ON : ICON_OFF;
+      musicBtn.classList.toggle("playing", on);
+      musicBtn.setAttribute("aria-label", on ? "Mute background music" : "Play background music");
+    }
+    musicBtn.addEventListener("click", () => {
+      if (audio.paused) audio.play().catch(() => {}); else audio.pause();
+    });
+    audio.addEventListener("play", syncMusicBtn);
+    audio.addEventListener("pause", syncMusicBtn);
+
+    /* ===== Open invitation ===== */
+    document.getElementById("openBtn").addEventListener("click", () => {
+      document.body.classList.remove("locked");
+      audio.volume = 0.6;
+      audio.play().catch(() => {});
+      musicBtn.classList.add("visible");
+      syncMusicBtn();
+      document.getElementById("verse").scrollIntoView({ behavior: "smooth" });
+    });
+
+    /* ===== Reveal on scroll ===== */
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+      }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+      document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+    } else {
+      document.querySelectorAll(".reveal").forEach(el => el.classList.add("in"));
+    }
+
+    /* ===== Countdown ===== */
+    (function () {
+      const target = new Date(EVENT.startIso).getTime();
+      const pad = n => String(Math.max(0, n)).padStart(2, "0");
+      const els = ["d", "h", "m", "s"].map(k => document.getElementById("cd-" + k));
+      function tick() {
+        const diff = target - Date.now();
+        if (diff <= 0) {
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("cdDone").style.display = "block";
+          clearInterval(timer);
+          return;
+        }
+        const vals = [
+          Math.floor(diff / 864e5),
+          Math.floor(diff / 36e5) % 24,
+          Math.floor(diff / 6e4) % 60,
+          Math.floor(diff / 1e3) % 60
+        ];
+        els.forEach((el, i) => el.textContent = pad(vals[i]));
+      }
+      const timer = setInterval(tick, 1000);
+      tick();
+    })();
+
+    /* ===== Calendar ===== */
+    const modal = document.getElementById("calModal");
+    const closeModal = () => modal.classList.remove("open");
+    document.getElementById("calBtn").addEventListener("click", () => modal.classList.add("open"));
+    document.getElementById("calClose").addEventListener("click", closeModal);
+    modal.addEventListener("click", e => { if (e.target === modal) closeModal(); });
+    document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+
+    document.getElementById("calGoogle").addEventListener("click", () => {
+      const p = new URLSearchParams({
+        action: "TEMPLATE", text: EVENT.title,
+        dates: `${EVENT.calStartUtc}/${EVENT.calEndUtc}`,
+        details: EVENT.details + "\n\nMap: " + EVENT.mapsUrl,
+        location: EVENT.venue
+      });
+      window.open("https://calendar.google.com/calendar/render?" + p.toString(), "_blank", "noopener,noreferrer");
+      closeModal();
+    });
+
+    document.getElementById("calIcs").addEventListener("click", () => {
+      const esc = s => s.replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
+      const ics = [
+        "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Wedding Invitation//Laiba & Aarif//EN",
+        "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "BEGIN:VEVENT",
+        "UID:wedding-laiba-aarif-20261128@invitation",
+        "DTSTAMP:20261001T000000Z",
+        "DTSTART:" + EVENT.calStartUtc, "DTEND:" + EVENT.calEndUtc,
+        "SUMMARY:" + esc(EVENT.title),
+        "DESCRIPTION:" + esc(EVENT.details + "\n\nMap: " + EVENT.mapsUrl),
+        "LOCATION:" + esc(EVENT.venue),
+        "STATUS:CONFIRMED", "END:VEVENT", "END:VCALENDAR"
+      ].join("\r\n");
+      const url = URL.createObjectURL(new Blob([ics], { type: "text/calendar;charset=utf-8" }));
+      const a = document.createElement("a");
+      a.href = url; a.download = "Laiba-Aarif-Wedding.ics";
+      document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url);
+      closeModal();
+    });
+
+    /* ===== Phone: copy number on tap (and still dial on phones) ===== */
+    const toast = document.getElementById("toast");
+    let toastTimer;
+    function showToast(msg) {
+      toast.textContent = msg; toast.classList.add("show");
+      clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove("show"), 2500);
+    }
+    document.querySelectorAll("a.phone").forEach(a => {
+      a.addEventListener("click", () => {
+        const num = "+91" + a.dataset.phone;
+        if (navigator.clipboard) navigator.clipboard.writeText(num).then(() => showToast("Phone number copied"), () => {});
+      });
+    });
+  </script>
+</body>
+</html>
