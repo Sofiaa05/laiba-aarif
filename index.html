@@ -209,6 +209,11 @@
     .contact h3 { font-size: 1.25rem; font-weight: 300; letter-spacing: .06em; color: var(--primary); margin-bottom: .2rem; }
     .contact a.phone { display: inline-block; margin-top: .15rem; font-size: 1.1rem; font-weight: 300; letter-spacing: .22em; color: var(--primary); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(208,162,142,.7); font-variant-numeric: tabular-nums; }
     .contact a.phone:hover { color: #8b1e32; text-decoration-color: var(--primary); }
+    .c-row { display: flex; align-items: baseline; justify-content: center; gap: .6rem; width: 100%; max-width: 20rem; padding: .5rem 0; }
+    .c-row + .c-row { border-top: 1px dashed rgba(208,162,142,.45); }
+    .c-name { font-size: 1.2rem; font-style: italic; font-weight: 500; color: var(--primary); }
+    .c-name::after { content: " :"; font-style: normal; color: var(--rosegold); }
+    .c-row a.phone { margin-top: 0; letter-spacing: .14em; }
     .residence { margin-top: 1rem; font-size: .9rem; line-height: 1.6; font-weight: 500; font-style: italic; color: var(--primary); }
     .toast { position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 70; display: none; border-radius: 999px; border: 1px solid rgba(208,162,142,.8); background: var(--primary); color: var(--primary-fg); padding: .6rem 1.5rem; font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; box-shadow: 0 6px 20px rgba(94,32,41,.35); white-space: nowrap; }
     .toast.show { display: block; animation: fade .2s ease; }
@@ -490,11 +495,10 @@
         <div class="divider"><span></span><span></span><span></span></div>
 
         <div class="contact">
-          <h3>Mrs. &amp; Mr. Mohd. Shafiq</h3>
-          <a class="phone" href="tel:+918920507200" data-phone="8920507200">89205 07200</a>
-          <a class="phone" href="tel:+919718606520" data-phone="9718606520">97186 06520</a>
-          <a class="phone" href="tel:+917011468351" data-phone="7011468351">70114 68351</a>
-          <a class="phone" href="tel:+918218377882" data-phone="8218377882">82183 77882</a>
+          <div class="c-row"><span class="c-name">Shafiq</span><a class="phone" href="tel:+918920507200" data-phone="8920507200">89205 07200</a></div>
+          <div class="c-row"><span class="c-name">Sunny</span><a class="phone" href="tel:+919718606520" data-phone="9718606520">97186 06520</a></div>
+          <div class="c-row"><span class="c-name">Ayaan</span><a class="phone" href="tel:+917011468351" data-phone="7011468351">70114 68351</a></div>
+          <div class="c-row"><span class="c-name">Kaif</span><a class="phone" href="tel:+918218377882" data-phone="8218377882">82183 77882</a></div>
         </div>
 
         <p class="residence">
@@ -573,7 +577,7 @@
         "With the blessings of our families, you are cordially invited to the Wedding Ceremony of Laiba (D/O Mrs. & Mr. Mohd. Shafiq Abbasi) with Mohd. Aarif (S/O Mrs. & Mr. Mohd. Arshad).\n\n" +
         "Programme — Saturday, 28 November 2026\n" +
         "Welcome of Barat: 7:00 PM\nNikah: 8:00 PM\nDinner: After Nikah\nRukhsati: 11:00 PM\n\n" +
-        "Contact: 8920507200, 9718606520, 7011468351, 8218377882"
+        "Contact: Shafiq 8920507200, Sunny 9718606520, Ayaan 7011468351, Kaif 8218377882"
     };
     document.getElementById("mapBtn").href = EVENT.mapsUrl;
 
